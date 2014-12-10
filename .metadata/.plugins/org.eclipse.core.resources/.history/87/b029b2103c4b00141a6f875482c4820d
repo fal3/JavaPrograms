@@ -1,0 +1,44 @@
+import java.util.Scanner;
+
+
+public class Palindrome {
+	public static void main(String[] args, String newparts) {
+		Scanner keyboard = new Scanner(System.in);
+		System.out.print("Enter an integer to check if it is a palindrome  ");
+		String orig = keyboard.nextLine(); //original number
+		String[] parts = orig.split("");
+		pali(parts);{
+			if (pali(parts)==(true)){
+				System.out.print(orig +" is a palindrome");
+			}
+			if ((pali(parts)==false)){
+				System.out.print(orig + " is not a palindrome of " + newparts);
+			}
+		}
+	}
+	
+	public static boolean pali(String[] parts){
+		int n1=0;
+		int n2=parts.length-1;
+		while (n2>n1){
+			
+			if (parts[n1] != parts[n2]) {
+				return false;
+				
+			}
+			newparts[n1]=parts[n2]
+			n1++;
+			n2--;
+		}
+		return true;
+	}
+
+
+public static String reverse(String[] newparts, int n1, int n2, String parts[]){
+		newparts[n1]=parts[n2];
+		return newparts[];
+}
+}
+
+
+	

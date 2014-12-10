@@ -1,0 +1,20 @@
+import java.util.ArrayList;
+import java.awt.List;
+import java.io.*;
+
+public class Course {
+	long classId = 0;
+	String courseName = "";
+	ArrayList<Assignment> assignments = new ArrayList<Assignment>();
+	ArrayList<Student> students = new ArrayList<Student>();
+	
+	public long getId()
+	{
+		return classId;
+	}
+	public String getName()
+	{
+		return courseName;
+	}
+	
+}

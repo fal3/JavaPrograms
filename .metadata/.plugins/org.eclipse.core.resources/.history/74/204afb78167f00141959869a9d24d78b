@@ -1,0 +1,8 @@
+
+public class Student {
+	long studentId = 0;
+	String firstName = "";
+	String lastName = "";
+	ArrayList<Course> courses = new ArrayList<Course>;
+
+}

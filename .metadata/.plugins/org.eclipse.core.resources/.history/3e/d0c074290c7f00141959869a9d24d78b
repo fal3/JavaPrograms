@@ -1,0 +1,10 @@
+import java.util.ArrayList;
+import java.io.*;
+public class Assignment {
+	int assignmentId = 0;
+	//reference for the course
+	String assignmentName = "";
+	int possiblePoints = 0;
+	ArrayList<Integer> scores = new ArrayList<Integer>();
+	scores.add(100);
+}

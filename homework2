@@ -1,0 +1,370 @@
+Alex Fallah
+Homework2 Comp258
+
+Chapter 1.
+
+9)
+int n, bYear;
+bYear = birthYear //birthyear is passed as a parameter and already defined
+Scanner keyboard = new Scanner(System.in);
+System.out.print("Please enter a year number");
+n = keyboard.nextInt();
+bYear = bYear+n;
+System.out.println("The birthday wizard says in " + n + " years you will be " + bYears );
+
+11)
+a. 256
+b. 65,536
+c. 4,294,967,296
+
+14)
+
+Song: Play, Pause, Stop
+Playlist: Next, Previous, Shuffle, Repeat, Remove, Play All
+
+Song is a single object, while playlist has behaviors for a group of song objects. 
+
+15)
+
+Credit Card: First Name, Last Name, Card Type, Card Number, Address, Limt, Expiration Date
+
+Behaviors: Deposit, Refund, Transfer Money
+
+Chapter 2.
+
+2)
+
+Scanner keyboard = new Scanner(System.in); 
+System.out.print("Enter a floating point number"); 
+float x = keyboard.nextFloat();
+int y = (int)x;
+System.out.print("float x is: " + x); 
+System.out.print("int y is: " + y); 
+byte z= (byte)x;
+System.out.println("z (byte) is: " + z); 
+
+The program will return an error for y and z and will give unexcpected results if x is greater or less than its minumim and max value
+
+4)
+a.24
+b.19
+c.15
+
+6)
+
+Test 1 60.0
+Test 2 302.0
+
+An error will be returned because you are not allowed to use "-" in a string output
+
+Programming project 1
+
+public class FaraneheitToCelsius {
+	public void main(String[] args) {
+		Scanner keyboard = new Scanner(System.in);
+		int dF;
+		double dC;
+		System.out.print("Enter degrees faranheit: ");
+		dF = keyboard.nextInt();
+		dC = (5* (double)dF - 32.0)/9.0;
+		System.out.print(dF + " degrees Fahrenheit is " + dC + " Celcius " );
+	}
+
+}
+
+Chapter 3.
+
+3)
+
+a.
+
+
+Scanner keyboard = new Scanner(System.in); 
+boolean yesOrNo = false; 
+System.out.println("Enter Yes or no "); 
+String response = keyboard.next(); 
+if(response.equals("yes") || response.equals("y")) 
+{ 
+yesOrNo = true; 
+} 
+else 
+{ 
+yesOrNo = false; 
+} 
+
+b.
+
+if(response.equals("yes") || response.equals("y") || response.equals("Yes") || response.equals("Y"))
+
+
+4)
+
+a. B
+b. B
+c. A
+d. A
+e. A
+f. A
+
+
+7)
+
+a. false
+b. true
+c. true
+d. true 
+
+9)
+
+It will always return true because of the or statement
+
+10)
+
+2<5 is not true, your program will return an error
+
+11)
+
+switch(grade) 
+{ 
+case 'A': 
+gradeValue = 4.0; 
+break; 
+case 'B': 
+gradeValue = 3.0; 
+break; 
+case 'C': 
+gradeValue = 2.0; 
+break; 
+case 'D': 
+gradeValue = 1.0; 
+break; 
+case 'F': 
+gradeValue = 0.0; 
+break; 
+default: 
+gradeValue = 0.0; 
+System.out.print("Error!!!"); 
+}
+
+Chapter 4
+
+2)
+
+double balance = 0.0, 
+yearlyRate = 0.025; 
+
+print("Enter d for deposit, w for withdrawal or x to exit"); 
+string input = user input
+switch (input)
+Case 'A' { 
+	if(balance > 0.0) 
+		{ 
+			balance += (yearlyRate / 12) * balance; 
+		} 
+		System.out.println("Beginning of Month Balance: " + balance); 
+		if(transaction.equals("d")) 
+			{ 
+				System.out.println("Enter deposit amount"); 
+				balance += keyboard.nextDouble(); 
+			} 
+			else if(transaction.equals("w")) 
+			{ 
+System.out.println("Enter withdrawal amount"); 
+balance -= keyboard.nextDouble(); 
+} 
+System.out.println("Balance after transaction: " + balance); 
+System.out.println("Enter d for deposit, w for withdrawal or x to exit"); 
+transaction = keyboard.next(); 
+}
+
+
+Chapter 5.
+
+class creditCardAccount 
+2)
+
+variables:
+
+- string nameOnCard;
+- int cardNumber;
+- string expDate;
+- int limit;
+
+methods:
+
+void deposit(double amount)
+void transfer(double amount)
+
+creditCardAccount accountOne = new creditCardAccount();
+creditCardAccount accountTwo = new creditCardAccount();
+creditCardAccount accountThree = new creditCardAccount();
+
+3)
+
+class coin
+
+variables:
+
+- boolean headsOrTails;
+- int value;
+
+methods:
+
+boolean flip();
+
+coin nickel = new coin();
+coin quarter = new coin();
+coin penny = new coin();
+
+
+public class motorBoat{
+	- double capacityOfFuelTank;
+	- double amountOfFuel;
+	- double maxSpeed;
+	- double currentSpeed;
+	- double motorEffeciency;
+	- double totalDistanceTravel;
+
+	public void changeSpeed(double newSpeed){
+		if (newSpeed) < 0.0) currentSpeed = 0.0;
+		else if (newSpeed > maxSpeed) currentSpeed = maxSpeed;
+		else currentSpeed = newSpeed;
+	}
+	public void operateTime(double time){
+		if(time>0.0){
+			double fuelUsed = (motorEffeciency * currentSpeed * currentSpeed * time);
+			double currentTime;
+
+			if(fuelUsed > amountOfFuel){
+				currentTime = (amountOfFuel/fuelUsed)*time;
+				amountOfFuel = 0.0;
+			}
+			else{
+				amountOfFuel = (amountOfFuel - fuelUsed);
+				currentTime = time;
+			}
+			totalDistanceTravel = totalDistanceTravel+(currentTime*currentSpeed);
+			}
+		}
+		
+	}
+
+	public void refuel(double amount){
+			tempAmount= amount + amountOfFuel;
+			if(amount > 0.0){
+				if(tempAmount>capacityOfFuelTank)
+				 amountOfFuel = capacityOfFuelTank;
+				else
+					fuelUsed = fuelUsed + amount;
+			}
+		}
+	}
+
+	public double fuelLeft(){
+		return fuelUsed;
+	}
+
+	public double distance(){
+		return totalDistanceTravel
+	}
+
+}
+
+8)
+
+public class PersonAddress {
+	- String firstName;
+	- String lastName;
+	- String emailAddress;
+	- String telephoneNumber;
+	public String getEmailAddress() {
+		return emailAddress;
+	}
+
+	public String getFirstName() {
+		return firstName;
+	}
+
+	public String getLastName() {
+		return lastName;
+	}
+
+	public String getTelephoneNumber() {
+		return telephoneNumber;
+	}
+
+	public void setEmailAddress(String emailAddress) {
+		this.emailAddress = emailAddress;
+	}
+
+	public void setFirstName(String firstName) {
+		this.firstName = firstName;
+	}
+
+	public void setLastName(String lastName) {
+		this.lastName = lastName;
+	}
+
+	public void setTelephoneNumber(String telephoneNumber) {
+		this.telephoneNumber = telephoneNumber;
+	}
+
+
+}
+
+
+
+
+Chapter 6
+
+2)
+
+public class time(){
+	int hours = 0;
+	int minutes = 0;
+	int range = 0;
+	boolean aM= false;
+
+	-boolean isValid(hour,minute){
+		if ( (hour<23) && (hour >=0) && (minutes >= 0) && (minutes<=59) )
+			range = 11;
+			return true;
+		else 
+			range = hours;
+			return false;
+	}
+	
+	setTime(hour,minute,isAm){
+		hours =hour;
+		minutes = minute;
+		if (isValid?(hour,minute)){
+			hours = h
+
+	}
+
+	
+}
+
+class RoomOccupancy{
+	public void addOneToRoom(room){
+		numberInRoom+=1;
+		totalNumber+=1;
+	}
+
+	public void removeOneFromRoom(room){
+		numberInroom-=1;
+		totalNumber-=1;
+	}
+
+	public int getNumber(room){
+		return numberInroom;
+	}
+
+	public int getTotal(building){
+		return totalNumber;
+	}
+
+}
+
+
+

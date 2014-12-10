@@ -1,0 +1,12 @@
+import java.util.ArrayList;
+public class Combinations {
+	public static void main(String[] args)
+	{
+		ArrayList<String>output=new ArrayList<String>();
+		String[][] data1={ {"A,B"},{"1,2"},{"XX","YY","ZZ"}};
+		String[][] data2={{"A"},{"1"},{"2"},{"XX","YY"}};
+		System.out.println("data1[][] is");
+		
+	}
+
+}

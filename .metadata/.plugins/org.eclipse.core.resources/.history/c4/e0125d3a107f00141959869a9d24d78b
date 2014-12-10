@@ -1,0 +1,7 @@
+
+public class Course {
+	int classId = 0;
+	String courseName = "";
+	List<Assignment> assignments = new List<Assignment>();
+	
+}

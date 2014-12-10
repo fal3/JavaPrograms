@@ -1,0 +1,12 @@
+package snake;
+import java.awt.Graphics;
+import javax.swing.JPanel;
+
+@SuppressWarnings("serial");
+public class RenderPanel {
+	@Override
+	protected void paintComponet(Graphics g) {
+		
+	}
+
+}

@@ -1,0 +1,6 @@
+import java.util.scanner;
+import java.io.*;
+class TripComputer {
+	private double totalTime = 0.0;
+
+}

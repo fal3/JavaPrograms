@@ -1,0 +1,32 @@
+import java.util.ArrayList;
+public class Student {
+	long studentId = 0;
+	String firstName = "";
+	String lastName = "";
+	// A list of courses; This should not be directly stored in the file. You should reconstruct this from the course list
+	
+	public long getId()
+	{
+		return studentId;
+	}
+	public String getFirstName()
+	{
+		return firstName;
+	}
+	public String getLastName()
+	{
+		return lastName;
+	}
+	public ArrayList<Course> getCourses()
+	{
+		//return courses
+	}
+	public double getGrade(Course c)
+	{
+		//return grade;
+	}
+	public void enroll(Course c)
+	{
+		//
+	}
+}

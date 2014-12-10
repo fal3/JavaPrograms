@@ -1,0 +1,46 @@
+
+public class DisplaySpeciesFile {
+
+	public static void main(String[] args) {
+		Scanner keyboard = new keyboard(System.in)
+		String line;
+		boolean isFound=False;
+		File speciesFile = new File("Species.txt");
+		String speciesName= Scanner.nextLine();
+		try
+		{
+			ObjectInputStream inputFile= null;
+			inputFile = new ObjectInputStream(new FileInputStream(speciesFile));
+			while(true)
+			{
+				Species s = (Species)inputStream.readObject();
+				if(s.getName().toString().equals(nameOfSpecies))
+				{
+					System.out.println(s);
+					isFound = true;
+				}
+			}
+		}
+		catch(EOFException e)
+		{
+			if(!isFound)
+			{
+				System.out.println("Species not in file");
+			}
+		}
+		try {
+			while(true)
+			{
+				Species s = (Species)inputStream.ReadObject();
+				outputStream.WriteObject(s);
+			}
+			
+		} 
+		catch (EOFException e) {
+			System.out.println("Error!");
+		}
+		outputStream.close();
+
+	}
+
+}

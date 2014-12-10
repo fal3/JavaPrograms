@@ -1,0 +1,6 @@
+
+public class Score {
+	int score = 0;
+	double percent = 0.0;
+	int assignmentNumber = 0;
+}

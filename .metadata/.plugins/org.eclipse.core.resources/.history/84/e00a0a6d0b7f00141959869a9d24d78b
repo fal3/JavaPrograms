@@ -1,0 +1,8 @@
+
+public class Assignment {
+	int assignmentId = 0;
+	//reference for the course
+	string assignmentName = "";
+	int 
+
+}

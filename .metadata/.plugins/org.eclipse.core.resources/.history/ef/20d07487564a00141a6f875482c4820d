@@ -1,0 +1,24 @@
+import java.util.Scanner;
+
+
+public class Palindrome {
+	public static void main(String[] args) {
+		Scanner keyboard = new Scanner(System.in);
+		System.out.print("Enter an integer to check if it is a palindrome  ");
+		String orig = keyboard.nextLine(); //original number
+		String[] parts = orig.split("");
+		pali(parts);
+	}
+	
+	public static String pali(String[] parts){
+		for(int i=1; i<parts.length-1; i++){
+            System.out.println("Count is: " + i);
+            }
+		
+		System.out.print(parts[1]);
+		return parts[3];
+	}
+
+}
+
+	

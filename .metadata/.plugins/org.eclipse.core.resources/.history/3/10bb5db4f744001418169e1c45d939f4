@@ -1,0 +1,20 @@
+// Alex Fallah , Fallaha@wit.edu
+package Java.util;
+
+
+
+import java.util.Scanner;
+public class FromBinary {
+	public static void main(String[] args) {
+		Scanner keyboard = new Scanner(System.in);
+		System.out.print("Enter a 4-bit binary integer: ");
+		String binary = keyboard.nextLine();
+		String[] parts = binary.split("");
+		int b0 = String.toInteger(parts[0]);
+		 for(int i=1; i<parts.length; i++)
+		 {
+		
+		 }
+		
+	}
+}

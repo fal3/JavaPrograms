@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename compilation unit &apos;Combinations.java&apos; to &apos;ArrayRecursion.java&apos;&#x0A;- Original project: &apos;ArrayRecursion&apos;&#x0A;- Original element: &apos;Combinations.java&apos;&#x0A;- Renamed element: &apos;ArrayRecursion.java&apos;" description="Rename compilation unit &apos;Combinations.java&apos;" flags="2" id="org.eclipse.jdt.ui.rename.compilationunit" input="/src&lt;{Combinations.java" name="ArrayRecursion.java" references="false" stamp="1417722073935" version="1.0"/>
+</session>

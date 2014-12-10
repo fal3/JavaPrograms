@@ -1,0 +1,6 @@
+
+public class Course {
+	int classId = 0;
+	String courseName = "";
+
+}

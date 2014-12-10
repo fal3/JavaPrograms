@@ -1,0 +1,15 @@
+import java.util.ArrayList;
+import java.util.HashMap;
+
+//to use a .csv just make a scanner and change the delimiter to "," (keyboard.setDelimiter(',');
+public class Grader {
+	ArrayList<Course> courses = new ArrayList<Course>();
+	ArrayList<Student> students = new ArrayList<Student>();
+	ArrayList<Assignment> assignments = new ArrayList<Assignment>();
+	ArrayList<Score> scores = new ArrayList<Score>();
+	HashMap<Integer, Integer> enrollments = new HashMap<Integer, Integer>();
+	String loadStudents = "File name";
+	String loadCourses = "File name";
+	String loadEnrollments = "File name";
+	String loadAssignments
+}

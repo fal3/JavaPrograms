@@ -1,0 +1,15 @@
+import java.util.ArrayList;
+import java.io.*;
+public class Assignment {
+	int assignmentId = 0;
+	//reference for the course
+	String assignmentName = "";
+	int possiblePoints = 0;
+	int[] Scores = new int[10];
+	
+	public int getId() {
+		return assignmentId;
+	}
+	
+	
+}

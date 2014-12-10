@@ -1,0 +1,59 @@
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.ObjectOutputStream;
+import java.util.Scanner;
+
+import java.io.*;
+import java.util.scanner;
+
+public class WriteSpeciesFile   {
+
+	public static void main(String args[]) throws IOException{
+
+		File input = null;
+		Scanner readFile = null;
+
+		try{
+
+			input = new File("SpeciesInfo.txt");
+			readFile = new Scanner(input);
+			System.out.println("File was successflly found at: " + input.getAbsoluteFile());
+
+		}
+		catch (FileNotFoundException e) {
+			System.out.println("There is no file found, please input a file first");  
+			e.printStackTrace(); 
+
+		}
+
+		String oldfile = null;;
+		ObjectOutputStream outputStream = null;
+		String outputName = "speciesData";
+		File outputFile = new File(outputName);
+		
+		try{
+			outputStream = new ObjectOutputStream(new FileOutputStream(outputFile));
+
+		}
+		catch(IOException e)
+		{
+			System.out.println("Unable to open");
+			e.printStackTrace();
+		}
+
+		try{
+
+
+			while(readFile.hasNextLine() ){
+				oldfile = readFile.nextLine();
+				outputStream.writeObject(oldfile);
+			}
+			outputStream.close();
+		}
+		catch(Exception e){
+			System.out.println("Error");
+		}
+	}
+}

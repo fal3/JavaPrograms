@@ -1,0 +1,6 @@
+import Assignment.java;
+public class Score {
+	int score = 0;
+	double percent = 0.0;
+	
+}

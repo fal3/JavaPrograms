@@ -1,0 +1,71 @@
+import java.util.ArrayList;
+import java.awt.List;
+import java.io.*;
+
+public class Course {
+	long classId = 0;
+	String courseName = "";
+	ArrayList<Assignment> assignments = new ArrayList<Assignment>();
+	ArrayList<Student> students = new ArrayList<Student>();
+	
+	public long getId()
+	{
+		return classId;
+	}
+	public String getName()
+	{
+		return courseName;
+	}
+	public ArrayList<Assignment> getAssignments()
+	{
+		return assignments;
+	}
+	public ArrayList<Score> getScores (Assignment a)
+	{
+		return a.getScores();
+	}
+	public ArrayList<Score> getScores (Student s)
+	{
+		int sID = s.getID();
+		ArrayList<Score> studentScores;
+		
+		for(int i=0;i<assignments.size(); i++)
+		{
+			ArrayList<Score> curAssignment = assignments.get(i).getScores();
+			for(int x=0; x < ((CharSequence) curAssignment).length(); x++)
+			{
+				if(curAssignment.get(x).getStudent() == sID)
+				{
+					studentScores.add(curAssignment.get(x));
+					break;
+				}
+			}
+		}
+		
+		return studentScores;
+	}
+	
+	public double getGrade(Student s)
+	{
+		ArrayList<Score> studentScores = getScores(s);
+		double totalScore=0;
+		int numOfAssignments=0;
+		for(int i = 0; i < studentScores.size(); i++)
+		{
+			totalScore += studentScores.get(i).getScore();
+			numOfAssignments++;
+		}
+		double finalGrade = totalScore / numOfAssignments;
+		return finalGrade;
+		
+	}
+	public void addAssignment(Assignment a)
+	{
+		//add a new assignment.
+	}
+	
+	public void void addStudent(Student s){
+//	add a new student to the course; initialize 
+//	the scores for all current assignments to zero.
+	}
+}
